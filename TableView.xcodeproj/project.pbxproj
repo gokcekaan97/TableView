@@ -13,6 +13,9 @@
 		272528CD29791EDF003270AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272528CB29791EDF003270AD /* Main.storyboard */; };
 		272528CF29791EE0003270AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 272528CE29791EE0003270AD /* Assets.xcassets */; };
 		272528D229791EE0003270AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272528D029791EE0003270AD /* LaunchScreen.storyboard */; };
+		272528E1297FC6DA003270AD /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272528DF297FC6DA003270AD /* MyTableViewCell.swift */; };
+		272528E2297FC6DA003270AD /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 272528E0297FC6DA003270AD /* MyTableViewCell.xib */; };
+		9954B727AFA1620A2715FAEF /* Pods_TableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FD3877C1387680DD457058E /* Pods_TableView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,11 @@
 		272528CE29791EE0003270AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		272528D129791EE0003270AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		272528D329791EE0003270AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		272528DF297FC6DA003270AD /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		272528E0297FC6DA003270AD /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
+		5FD3877C1387680DD457058E /* Pods_TableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6235DE1286DCE1EDB2FFC401 /* Pods-TableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableView.release.xcconfig"; path = "Target Support Files/Pods-TableView/Pods-TableView.release.xcconfig"; sourceTree = "<group>"; };
+		9D90FA3FFA16A28B79630CF6 /* Pods-TableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableView.debug.xcconfig"; path = "Target Support Files/Pods-TableView/Pods-TableView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9954B727AFA1620A2715FAEF /* Pods_TableView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				272528C429791EDF003270AD /* TableView */,
 				272528C329791EDF003270AD /* Products */,
+				91E5480CD0795E2AE6C928C8 /* Pods */,
+				AD1B2B906F7EF9BAAA3EB564 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +70,31 @@
 				272528C529791EDF003270AD /* AppDelegate.swift */,
 				272528C729791EDF003270AD /* SceneDelegate.swift */,
 				272528C929791EDF003270AD /* ViewController.swift */,
+				272528DF297FC6DA003270AD /* MyTableViewCell.swift */,
+				272528E0297FC6DA003270AD /* MyTableViewCell.xib */,
 				272528CB29791EDF003270AD /* Main.storyboard */,
 				272528CE29791EE0003270AD /* Assets.xcassets */,
 				272528D029791EE0003270AD /* LaunchScreen.storyboard */,
 				272528D329791EE0003270AD /* Info.plist */,
 			);
 			path = TableView;
+			sourceTree = "<group>";
+		};
+		91E5480CD0795E2AE6C928C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D90FA3FFA16A28B79630CF6 /* Pods-TableView.debug.xcconfig */,
+				6235DE1286DCE1EDB2FFC401 /* Pods-TableView.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AD1B2B906F7EF9BAAA3EB564 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FD3877C1387680DD457058E /* Pods_TableView.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +104,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 272528D629791EE0003270AD /* Build configuration list for PBXNativeTarget "TableView" */;
 			buildPhases = (
+				7CF408663D7332983FDBEBB6 /* [CP] Check Pods Manifest.lock */,
 				272528BE29791EDF003270AD /* Sources */,
 				272528BF29791EDF003270AD /* Frameworks */,
 				272528C029791EDF003270AD /* Resources */,
@@ -126,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				272528D229791EE0003270AD /* LaunchScreen.storyboard in Resources */,
+				272528E2297FC6DA003270AD /* MyTableViewCell.xib in Resources */,
 				272528CF29791EE0003270AD /* Assets.xcassets in Resources */,
 				272528CD29791EDF003270AD /* Main.storyboard in Resources */,
 			);
@@ -133,12 +165,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7CF408663D7332983FDBEBB6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TableView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		272528BE29791EDF003270AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				272528CA29791EDF003270AD /* ViewController.swift in Sources */,
+				272528E1297FC6DA003270AD /* MyTableViewCell.swift in Sources */,
 				272528C629791EDF003270AD /* AppDelegate.swift in Sources */,
 				272528C829791EDF003270AD /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +340,7 @@
 		};
 		272528D729791EE0003270AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D90FA3FFA16A28B79630CF6 /* Pods-TableView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +369,7 @@
 		};
 		272528D829791EE0003270AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6235DE1286DCE1EDB2FFC401 /* Pods-TableView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
